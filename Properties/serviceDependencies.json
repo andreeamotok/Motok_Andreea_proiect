@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "Naznean_Larisa_Lab8Context"
+    }
+  }
+}
