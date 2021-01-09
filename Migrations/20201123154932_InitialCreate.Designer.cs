@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Naznean_Larisa_Lab8.Data;
+using Motok_Andreea_Proiect.Data;
 
-namespace Naznean_Larisa_Lab8.Migrations
+namespace Motok_Andreea_Proiect.Migrations
 {
-    [DbContext(typeof(Naznean_Larisa_Lab8Context))]
+    [DbContext(typeof(Motok_Andreea_ProiectContext))]
     [Migration("20201123154932_InitialCreate")]
     partial class InitialCreate
     {
@@ -20,14 +20,14 @@ namespace Naznean_Larisa_Lab8.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Naznean_Larisa_Lab8.Models.Book", b =>
+            modelBuilder.Entity("Motok_Andreea_Proiect.Models.Movie", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Author")
+                    b.Property<string>("Director")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
@@ -38,7 +38,7 @@ namespace Naznean_Larisa_Lab8.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Book");
+                    b.ToTable("Movie");
                 });
 #pragma warning restore 612, 618
         }

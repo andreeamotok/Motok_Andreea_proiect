@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Naznean_Larisa_Lab8.Migrations
+namespace Motok_Andreea_Proiect.Migrations
 {
     public partial class PublishingDate : Migration
     {
@@ -9,7 +9,7 @@ namespace Naznean_Larisa_Lab8.Migrations
         {
             migrationBuilder.AlterColumn<decimal>(
                 name: "Price",
-                table: "Book",
+                table: "Movie",
                 type: "decimal(6, 2)",
                 nullable: false,
                 oldClrType: typeof(decimal),
@@ -17,7 +17,7 @@ namespace Naznean_Larisa_Lab8.Migrations
 
             migrationBuilder.AddColumn<DateTime>(
                 name: "PublishingDate",
-                table: "Book",
+                table: "Movie",
                 nullable: false,
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
         }
@@ -26,11 +26,11 @@ namespace Naznean_Larisa_Lab8.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "PublishingDate",
-                table: "Book");
+                table: "Movie");
 
             migrationBuilder.AlterColumn<decimal>(
                 name: "Price",
-                table: "Book",
+                table: "Movie",
                 type: "decimal(18,2)",
                 nullable: false,
                 oldClrType: typeof(decimal),

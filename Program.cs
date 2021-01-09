@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Naznean_Larisa_Lab8
+namespace Motok_Andreea_Proiect
 {
     public class Program
     {

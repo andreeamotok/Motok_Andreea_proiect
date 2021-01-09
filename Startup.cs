@@ -9,9 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Naznean_Larisa_Lab8.Data;
+using Motok_Andreea_Proiect.Data;
 
-namespace Naznean_Larisa_Lab8
+namespace Motok_Andreea_Proiect
 {
     public class Startup
     {
@@ -27,8 +27,8 @@ namespace Naznean_Larisa_Lab8
         {
             services.AddRazorPages();
 
-            services.AddDbContext<Naznean_Larisa_Lab8Context>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("Naznean_Larisa_Lab8Context")));
+            services.AddDbContext<Motok_Andreea_ProiectContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Motok_Andreea_ProiectContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +50,7 @@ namespace Naznean_Larisa_Lab8
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseDirectorization();
 
             app.UseEndpoints(endpoints =>
             {

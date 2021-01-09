@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Naznean_Larisa_Lab8.Models
+namespace Motok_Andreea_Proiect.Models
 {
     public class AssignedCategoryData
     {

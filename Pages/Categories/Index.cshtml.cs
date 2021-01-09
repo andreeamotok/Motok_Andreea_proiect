@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Naznean_Larisa_Lab8.Data;
-using Naznean_Larisa_Lab8.Models;
+using Motok_Andreea_Proiect.Data;
+using Motok_Andreea_Proiect.Models;
 
-namespace Naznean_Larisa_Lab8.Pages.Categories
+namespace Motok_Andreea_Proiect.Pages.Categories
 {
     public class IndexModel : PageModel
     {
-        private readonly Naznean_Larisa_Lab8.Data.Naznean_Larisa_Lab8Context _context;
+        private readonly Motok_Andreea_Proiect.Data.Motok_Andreea_ProiectContext _context;
 
-        public IndexModel(Naznean_Larisa_Lab8.Data.Naznean_Larisa_Lab8Context context)
+        public IndexModel(Motok_Andreea_Proiect.Data.Motok_Andreea_ProiectContext context)
         {
             _context = context;
         }
